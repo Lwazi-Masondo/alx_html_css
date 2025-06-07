@@ -12,9 +12,30 @@ main {
 aside {
   flex: 1;
   overflow-y: auto;
+  background-color: #455d7a;
 }
 
 article {
   flex: 2;
   overflow-y: auto;
+  background-color: #e3e3e3;
+  color: #233142;
+}
+
+figcaption {
+  color: #f95959;
+}
+
+header {
+  background-color: #f95959;
+}
+
+footer {
+  background-color: #f95959;
+}
+table,
+th,
+td {
+  border: 1px solid;
+  border-color: #233142;
 }
