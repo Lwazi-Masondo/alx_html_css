@@ -4,24 +4,23 @@
   box-sizing: border-box;
 }
 
+html,
 body {
   font-family: sans-serif;
-  color: #ffffff;
+  color: red;
+  display: block;
 }
 
 .background-image {
   background-image: url("./images/Object.png");
-  background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1093px;
+  width: 100%;
+  /* border: 2px solid red;
+  background-color: lightgrey; */
 }
-/* header {
-  width: 1103.41px;
-  height: 29.46px;
-  position: relative;
-  top: 35.02px;
-  left: 171.59px;
-} */
 
 .logo {
   width: 167.02px;
@@ -60,3 +59,277 @@ body {
   width: 45px;
   height: 15px;
 }
+
+main {
+}
+
+.get-schooled {
+  font-weight: 700;
+  font-size: 120px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+  position: relative;
+  top: 220px;
+}
+
+.tag-line {
+  height: 20px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  position: relative;
+  top: 230px;
+  color: red;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+.smiles {
+  width: 52px;
+}
+
+.grin {
+  width: 36px;
+}
+
+.laugh {
+  width: 49px;
+}
+.register {
+  color: #ffffff;
+  background: #c271ff;
+  border-style: none;
+  background-color: #c271ff;
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 22px;
+  width: 200px;
+  height: 44px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  text-align: center;
+}
+
+.register-btn-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 250px;
+}
+
+.learn {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 350px;
+}
+.learn-container {
+  color: #c271ff;
+  position: relative;
+  right: 10px;
+}
+
+.pros {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  position: relative;
+  top: 450px;
+  text-align: center;
+}
+
+.pros-img {
+  width: 150px;
+}
+
+.Bruce-img {
+  border-radius: 100%;
+}
+
+.testimonial-section {
+  background-color: #c271ff;
+  position: relative;
+  top: 595px;
+  height: 392px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: center; /*this centers elements vertically */
+  color: #ffffff;
+}
+.quote {
+  position: relative;
+  bottom: 20px;
+}
+
+.testimonial-name {
+  position: relative;
+  top: 20px;
+  line-height: 30px;
+}
+
+.tutorials-section {
+  background-color: #ffffff;
+  height: 100vh;
+  position: relative;
+  top: 595px;
+}
+
+.tutorial-heading {
+  color: #071629;
+  text-align: center;
+  position: relative;
+  top: 100px;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+
+.popular {
+  color: #c271ff;
+}
+
+.tutorials-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  position: relative;
+  top: 200px;
+}
+.tutorial {
+  position: relative;
+  width: 255px;
+  height: 335px;
+}
+
+.play-button-img {
+  position: absolute;
+  top: 50px;
+  right: 110px;
+  width: 50px;
+}
+
+.smiles-descriptions {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  position: relative;
+  top: 20px;
+  color: #071629;
+}
+
+.smiles-paragraph {
+  position: relative;
+  top: 40px;
+  color: #07162980;
+}
+
+.phillip-container {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  top: 60px;
+  color: #c271ff;
+}
+
+.tiny-phillip {
+  width: 50px;
+  position: relative;
+}
+
+.phillip-name {
+  position: relative;
+  left: 20px;
+  top: 25px;
+}
+
+.stars-container {
+  position: relative;
+  top: 80px;
+  color: #c271ff;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+}
+
+.membership-container {
+  background-color: #071629;
+  height: 100vh;
+  position: relative;
+  top: 595px;
+  text-align: center;
+}
+
+.membership-heading {
+  color: #c271ff;
+  position: relative;
+  top: 150px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+}
+
+.memberships {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  position: relative;
+  top: 250px;
+  color: #ffffff;
+}
+.member-item {
+  width: 230px;
+}
+
+.smile-heading {
+  position: relative;
+  top: 20px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.free {
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 100%;
+}
+
+.smile-paragraph {
+  position: relative;
+  top: 40px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.register-for-free-btn {
+  position: relative;
+  top: 450px;
+  width: 200px;
+}
+
+.faq-container {
+  background-color: pink;
+  height: 100vh;
+  position: relative;
+  top: 595px;
+}
+
+/* 
+.weather-presenter {
+  position: relative;
+  top: 30px;
+} */
