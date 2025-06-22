@@ -4,11 +4,18 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "source_sans_proregular";
+  src: url("./fonts/sourcesanspro-regular-webfont.woff") format("woff2"),
+    url("./fonts/sourcesanspro-regular-webfont.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html,
 body {
-  font-family: sans-serif;
-  color: red;
-  display: block;
+  font-family: source_sans_proregular;
+  width: 100%;
 }
 
 .background-image {
@@ -22,23 +29,23 @@ body {
   background-color: lightgrey; */
 }
 
-.logo {
-  width: 167.02px;
-  height: 29.46px;
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 800px;
   position: relative;
-  top: 35.02px;
-  left: 171.59px;
+  top: 50px;
+}
+
+.logo {
+  width: 160px;
 }
 
 .nav-menu {
   list-style: none;
   display: flex;
-  justify-content: space-between;
-  width: 234px;
-  height: 15px;
-  position: relative;
-  top: 37px;
-  left: 1041px;
+  flex-direction: row;
+  gap: 60px;
 }
 
 .nav-item {
@@ -48,19 +55,7 @@ body {
   line-height: 100%;
   letter-spacing: 0px;
   color: #ffffff;
-}
-
-.login {
-  width: 34px;
-  height: 15px;
-}
-
-.pricing {
-  width: 45px;
-  height: 15px;
-}
-
-main {
+  width: 200px;
 }
 
 .get-schooled {
@@ -70,7 +65,8 @@ main {
   letter-spacing: 0px;
   text-align: center;
   position: relative;
-  top: 220px;
+  top: 240px;
+  color: #ffffff;
 }
 
 .tag-line {
@@ -80,24 +76,13 @@ main {
   line-height: 100%;
   letter-spacing: 0px;
   position: relative;
-  top: 230px;
-  color: red;
+  top: 250px;
+  color: #ffffff;
   display: flex;
   justify-content: center;
   gap: 80px;
 }
 
-.smiles {
-  width: 52px;
-}
-
-.grin {
-  width: 36px;
-}
-
-.laugh {
-  width: 49px;
-}
 .register {
   color: #ffffff;
   background: #c271ff;
@@ -111,6 +96,8 @@ main {
   font-size: 14px;
   line-height: 100%;
   text-align: center;
+  position: relative;
+  top: 40px;
 }
 
 .register-btn-container {
@@ -127,7 +114,7 @@ main {
   display: flex;
   justify-content: center;
   position: relative;
-  top: 350px;
+  top: 450px;
 }
 .learn-container {
   color: #c271ff;
@@ -138,14 +125,35 @@ main {
 .pros {
   display: flex;
   justify-content: center;
-  gap: 100px;
+  gap: 150px;
   position: relative;
-  top: 450px;
+  top: 500px;
   text-align: center;
+  color: #ffffff;
 }
 
 .pros-img {
-  width: 150px;
+  width: 200px;
+  line-height: 24px;
+}
+
+.pro-name {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0px;
+  text-align: center;
+  position: relative;
+  top: 10px;
+}
+
+.pro-description {
+  position: relative;
+  top: 20px;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .Bruce-img {
@@ -155,7 +163,7 @@ main {
 .testimonial-section {
   background-color: #c271ff;
   position: relative;
-  top: 595px;
+  top: 550px;
   height: 392px;
   width: 100%;
   display: flex;
@@ -322,10 +330,87 @@ main {
 }
 
 .faq-container {
-  background-color: pink;
+  background-color: #ffffff;
   height: 100vh;
   position: relative;
   top: 595px;
+  align-content: center;
+}
+
+.faq-heading {
+  text-align: center;
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 100%;
+  text-align: center;
+  color: #071629;
+  position: relative;
+  bottom: 20px;
+}
+
+.faq-column-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.faq-paragraphs-container {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  top: 50px;
+}
+
+.faq-plus-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.faq-subheadings {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: #071629;
+}
+
+.faq-paragraphs {
+  width: 400px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: rgba(7, 22, 41, 0.5);
+}
+
+footer {
+  background-color: #071629;
+  height: 250px;
+  width: 100%;
+  position: relative;
+  top: 700px;
+}
+
+.footer-logos {
+  display: flex;
+  justify-content: center;
+  gap: 800px;
+  position: relative;
+  top: 100px;
+}
+
+.social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.copyright {
+  text-align: center;
+  position: relative;
+  top: 150px;
+  color: rgba(255, 255, 255, 1);
 }
 
 /* 
