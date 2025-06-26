@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  /* 10px / 16px = 62.5% */
+  /* font-size: 62.5%; This is will scale when the user changes the browsers default font-size, which is 16px. That is 62.5% x 16px = 10px.  */
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "source_sans_proregular";
+  src: url("../css_advanced/fonts/sourcesanspro-regular-webfont.woff")
+      format("woff2"),
+    url("../css_advanced/fonts/sourcesanspro-regular-webfont.woff2")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: source_sans_proregular;
+}
+
+:root {
+  --button-bg-color: #ff6565;
+  --button-text-color: #ffffff;
+}
+
+header {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 120px;
+  font-size: 12px;
+  color: var(--button-text-color);
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.logo {
+  width: 160px;
+}
+
+.nav-menu {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+li:hover {
+  color: var(--button-bg-color);
+  cursor: pointer;
+}
+
+.hero-wrapper {
+  background-image: url(./images/headphones_hero_1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100dvh;
+  width: 100%;
+}
+
+.hero {
+  font-size: 16px;
+  background: none;
+  height: calc(100dvh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.hero-content {
+  max-width: 637px;
+  width: 100%;
+  margin: 20px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: center;
+  color: var(--button-text-color);
+}
+
+.hero-intro h1 {
+  font-size: 32px;
+  line-height: 50px;
+  font-weight: bold;
+}
+
+button {
+  display: block;
+  margin: auto;
+  text-align: center;
+  font-size: 14px;
+  width: 160px;
+  margin-bottom: 30px;
+  padding: 20px 20px;
+  border-radius: 35px;
+  border: var(--button-bg-color);
+  background-color: #ff6565;
+  color: var(--button-text-color);
+}
+
+button:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+
+.what-we-do {
+  background-color: var(--button-text-color);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  font-size: 16px;
+}
+
+.icon-paragraph {
+  text-align: center;
+  width: 650px;
+  padding: 20px 0px 20px 0px;
+}
+
+.icon-cards {
+  width: 1100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 10px 20px;
+}
+
+.icon-card {
+  text-align: center;
+  max-width: 250px;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+}
+
+.icon-img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.our-results {
+  font-size: 16px;
+  height: 100dvh;
+  width: 100%;
+  background-image: url(/headphones/images/headphones_hero_2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--button-text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.results-paragraph {
+  width: 650px;
+}
+
+.pentagon-card-container {
+  width: 1100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin: 10px 20px;
+}
+
+.pentagon-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  position: relative;
+}
+
+.pentagon {
+  width: 200px;
+}
+
+.results {
+  position: absolute;
+}
+
+.percentage {
+  font-weight: bold;
+  font-size: 46px;
+}
+
+.contact-us {
+  height: 100dvh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: #ff6565;
+  font-weight: bold;
+}
+
+h2 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 150px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+input {
+  width: 400px;
+  height: 50px;
+  border-radius: 10px;
+  border-color: darkgray;
+}
+
+textarea {
+  width: 400px;
+  height: 200px;
+  border-radius: 10px;
+  border-color: darkgray;
+}
+
+/* MEDIA QUERY SECTION (DESKTOP FIRST = MAX-WIDTH) */
+
+/* To calculate min-width or max-width:
+        breakpoint width divided by 16px =  rem -moz-user-input
+          eg. 1400px / 16px = 87.5 rem (just round off though) */
