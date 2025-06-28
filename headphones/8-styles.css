@@ -1,0 +1,596 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  line-height: 1.5;
+  /*outline: 1px solid red;*/ /*helps me spot overflowing boxes, use it with overflow-x: hidden; in the html, body tags. */
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  /* 10px / 16px = 62.5% */
+  /* font-size: 62.5%; This is will scale when the user changes the browsers default font-size, which is 16px. That is 62.5% x 16px = 10px.  */
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /* overflow-x: hidden; */
+}
+
+@font-face {
+  font-family: "source_sans_proregular";
+  src: url("../css_advanced/fonts/sourcesanspro-regular-webfont.woff")
+      format("woff2"),
+    url("../css_advanced/fonts/sourcesanspro-regular-webfont.woff2")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: source_sans_proregular;
+}
+
+:root {
+  --button-bg-color: #ff6565;
+  --button-text-color: #ffffff;
+}
+
+header {
+  min-height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 12rem;
+  font-size: 1.2rem;
+  color: var(--button-text-color);
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.logo {
+  width: 160px;
+}
+
+.nav-menu {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+li {
+  transition: 0.7s ease-in-out;
+}
+
+li:hover {
+  color: var(--button-bg-color);
+  cursor: pointer;
+}
+
+.hero-wrapper {
+  background-image: url(./images/headphones_hero_1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100dvh;
+  width: 100%;
+}
+
+.hero {
+  font-size: 1.6rem;
+  background: none;
+  height: calc(100dvh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.hero-content {
+  width: 650px;
+  margin: 2rem;
+  margin-bottom: 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  text-align: center;
+  color: var(--button-text-color);
+}
+
+.hero-intro h1 {
+  font-size: 3.2rem;
+  line-height: 5rem;
+  font-weight: bold;
+}
+
+button {
+  display: block;
+  margin: auto;
+  text-align: center;
+  font-size: 1.4rem;
+  width: 160px;
+  margin-bottom: 3rem;
+  padding: 2rem 2rem;
+  border-radius: 35rem;
+  border: var(--button-bg-color);
+  background-color: #ff6565;
+  color: var(--button-text-color);
+  box-shadow: 0rem 0.3rem 0.6rem rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+
+.what-we-do {
+  background-color: var(--button-text-color);
+  min-height: 100dvh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  font-size: 1.6rem;
+}
+
+.icon-paragraph {
+  text-align: center;
+  width: 650px;
+  padding: 2rem 0rem;
+}
+
+.icon-cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin: 1rem 2rem;
+}
+
+.icon-card {
+  text-align: center;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.icon-card p:hover {
+  color: var(--button-text-color);
+  background-color: #071629;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.icon:hover {
+  transform: scale(1.5);
+}
+
+.icon-img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.our-results {
+  font-size: 1.6rem;
+  min-height: 100dvh;
+  width: 100%;
+  background-image: url(/headphones/images/headphones_hero_2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--button-text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+  text-align: center;
+  padding-top: 15rem;
+}
+
+.results-paragraph {
+  width: 650px;
+}
+
+.pentagon-card-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  padding: 1rem 5rem;
+}
+
+.pentagon-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.pentagon-card:hover {
+  opacity: 50%;
+  transform: scale(1.1);
+}
+
+.pentagon {
+  width: 100%;
+}
+
+.results {
+  position: absolute;
+  padding: 2rem 2rem;
+}
+
+.percentage {
+  font-weight: bold;
+  font-size: 4.6rem;
+}
+
+.contact-us {
+  min-height: 100dvh; /*grows with the content */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: #ff6565;
+  font-weight: bold;
+  padding-bottom: 10rem;
+}
+
+h2 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 15rem;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+input {
+  width: 400px;
+  height: 50px;
+  border-radius: 1rem;
+  border-color: darkgray;
+}
+
+textarea {
+  width: 400px;
+  height: 200px;
+  border-radius: 1rem;
+  border-color: darkgray;
+}
+
+footer {
+  font-size: 1.2rem;
+  color: var(--button-text-color);
+  background-color: #071629;
+  min-height: 30dvh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.logo-icon-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 15rem;
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+  animation-timing-function: ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.icon:nth-child(1) {
+  animation-delay: 0s;
+}
+.icon:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.icon:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.socials-icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 2.5rem;
+}
+
+.copyright {
+  opacity: 35%;
+}
+
+/* MEDIA QUERY SECTION (DESKTOP FIRST = MAX-WIDTH) */
+
+/* To calculate min-width or max-width:
+              breakpoint width divided by 16px =  rem -moz-user-input
+                eg. 1400px / 16px = 87.5 rem (just round off though) */
+
+/* LG - SMALL LAPTOPS: 1150px */
+@media (max-width: 90rem) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+/* Tablets: 906px */
+@media (max-width: 57rem) {
+  html {
+    font-size: 50%;
+  }
+
+  header {
+    padding: 0rem 5rem;
+  }
+
+  .icon-cards {
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 1rem;
+    padding: 2rem 1rem;
+  }
+
+  .icon-card {
+    width: 200px;
+  }
+
+  .icon {
+    width: 80px;
+  }
+
+  .icon-paragraph {
+    width: 500px;
+    padding: 0rem 2rem;
+  }
+
+  .pentagon-card-container {
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 6rem;
+  }
+
+  .pentagon-card {
+    width: 150px;
+  }
+
+  .hero-content {
+    width: 500px;
+    margin: 9rem 1rem;
+  }
+
+  button {
+    padding: 0;
+    width: 140px;
+    height: 40px;
+  }
+
+  .results-paragraph {
+    width: 500px;
+    margin-top: 18rem;
+    padding: 2rem 2rem;
+  }
+
+  input {
+    height: 30px;
+  }
+
+  textarea {
+    height: 150px;
+  }
+
+  .logo-icon-wrapper {
+    padding: 0 5rem;
+    margin-top: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .icon {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* SMALL PHONE DEVICES: 480px  */
+@media (max-width: 30rem) {
+  .hero-content {
+    width: 300px;
+    margin-bottom: 10rem;
+  }
+
+  header {
+    padding: 5rem 2rem 2rem 2rem;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .logo-menu-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .logo {
+    position: relative;
+    bottom: 4.4rem;
+  }
+
+  .menu-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    width: 50px;
+    min-height: 35px;
+    background-color: none;
+    align-self: flex-start;
+    cursor: pointer;
+  }
+
+  .line-1 {
+    background-color: #ffffff;
+    height: 5px;
+    width: 50px;
+    transition: 0.4s;
+  }
+
+  .line-2 {
+    background-color: #ffffff;
+    width: 25px;
+  }
+
+  .nav-menu {
+    font-size: 1.9rem;
+    flex-direction: column;
+    gap: 4rem;
+    display: none;
+  }
+
+  .nav-menu.show {
+    display: flex;
+  }
+
+  .menu-icon.open .line-1:nth-child(1) {
+    transform: rotate(45deg) translateY(15px);
+  }
+
+  .menu-icon.open .line-1:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-icon.open .line-1:nth-child(3):nth-child(3) {
+    transform: rotate(-45deg) translateY(-15px);
+  }
+
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon-paragraph {
+    width: 250px;
+    margin-top: 20rem;
+    padding: 2rem 2rem;
+  }
+
+  .icon-cards {
+    width: 300px;
+    margin-bottom: 20rem;
+    display: flex;
+    gap: 10rem;
+  }
+
+  .icon-card {
+    display: flex;
+    gap: 5rem;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .results-paragraph {
+    width: 250px;
+    margin-top: 10rem;
+  }
+
+  .pentagon-card-container {
+    width: 300px;
+    margin-bottom: 10rem;
+  }
+
+  .contact-form {
+    width: 300px;
+  }
+
+  input {
+    width: 300px;
+  }
+
+  textarea {
+    width: 300px;
+  }
+
+  button {
+    width: 120px;
+  }
+
+  .logo-icon-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
